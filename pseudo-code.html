@@ -1,0 +1,79 @@
+<html lang="en">
+    <head>
+        <meat charset="UTF-8">
+            <meat name="viewport" content=" width=device-width,initial-scale=1.0">
+                <title> document</title> 
+                <style>
+                  h1::before{
+                      content: " HELLO";
+                      color: brown;
+                      font-size: 12PX;
+                      background-color: chartreuse;
+                  }
+                  .special-effect::after{
+                      content: " bye";
+                      font-size: 12PX;
+                      background-color: rgb(255, 0, 0);
+                  }
+                     body {
+                        counter-reset: section;                      /* Set a counter named 'section', and its initial value is 0. */
+                        }
+
+                        p::before {
+                        counter-increment: section;                  /* Increment the value of section counter by 1 */
+                        content: "💖" counter(section) ": ";   /* Display the word 'Section ', the value of
+                                                                        section counter, and a colon before the content
+                                                                                                             of each h3 */
+                        }
+                 .containar{
+        background-color: lightblue;
+    } 
+    div{
+        height:  100px;
+        width: 100px;
+        background-color: hotpink;
+    }
+    #first{
+        background-color: forestgreen;
+    }
+    #second{
+        background-color: gold;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    #third{
+        background-color: green;
+    }                                 
+
+                </style>       
+    </head>
+    <body>
+        <h1> pseudo class</h1>
+        <h1 class=" special-effect"> normal class</h1>
+        <h1 class="special-effect"> vodro class</h1>
+        <input name="email "type=text">
+        <br>
+        <input name="password" type="text">
+        <br>
+        <a href="https://www.youtube.com">youtube</a>
+        <a href="https://mail.google.com/mail/?tab=rm&ogbl">visit our app</a>
+        <ul>
+            <p> Akhi</p>
+            <p>adiba</p>
+            <p>Mim</p>
+            <p>Sumaiya</p>
+            <p>Suma</p>
+            <p>nazat</p>
+            <p>amena</p>
+        </ul>
+<section> 
+        <h1> larning and climbing position high </h1>
+    </section>
+    <section class=" container">
+        <div id="first"> </div>
+        <div id="second"></div>
+        <div id="third"></div>
+    </section>
+    </body>
+</html>
